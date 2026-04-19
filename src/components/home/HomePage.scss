@@ -23,6 +23,28 @@
     flex-wrap: wrap;
   }
 
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+
+      .hero-stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $primary-color;
+      }
+
+      .hero-stat-label {
+        font-size: 0.85rem;
+        color: #666;
+      }
+    }
+  }
+
   .hero-image {
     background: url("/assets/illustrations/quiz-hero.svg") no-repeat center;
     background-size: contain;
@@ -45,17 +67,13 @@
     display: inline-block;
     text-align: center;
     font-weight: 600;
-    font-size: 50px;
-    margin-bottom: 2rem;
+    font-size: 40px !important;
+    margin-bottom: 0.4rem;
     width: 100%;
   }
 
   &__btn--primary {
-    background: linear-gradient(
-      to bottom,
-      $primary-color,
-      $secondary-color
-    ) !important;
+    background: $primary-color;
     color: #fff !important;
     font-weight: 600;
   }
@@ -63,6 +81,7 @@
   &__btn--outline {
     border-color: $primary-color !important;
     color: $primary-color !important;
+
     &:hover {
       background-color: rgba($primary-color, 0.1) !important;
     }
@@ -119,6 +138,54 @@
     }
   }
 
+  .solutions-section {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+
+    .solutions-header {
+      text-align: center;
+      margin-bottom: 3rem;
+
+      .solution-intro {
+        font-size: 1.2rem;
+        color: #666;
+      }
+    }
+
+    .solution-card {
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: #666;
+      }
+
+      .v-card-actions {
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      .solution-icon {
+        font-size: 3rem;
+        color: $primary-color;
+      }
+
+      .learn-more-btn {
+        color: $primary-color !important;
+      }
+    }
+  }
+
   .features-container {
     background-color: #fff;
     padding: 5rem 5rem;
@@ -130,18 +197,8 @@
 
   .feature-intro {
     color: #666;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
-    margin-top: -1rem;
-  }
-
-  .features-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
   }
 
   .feature-card {
@@ -149,7 +206,6 @@
     align-items: center;
     background: #fff;
     border: 2px solid rgba($primary-color, 0.2);
-    width: 100%;
     transition: all 0.3s ease;
     border-radius: 80px;
     padding: 10px 2rem;
@@ -168,12 +224,155 @@
     &:hover {
       border-color: $primary-color;
       background: linear-gradient(to bottom, $primary-color, $secondary-color);
+
       .feature-icon {
         color: $white-color;
       }
+
       .feature-title,
       .feature-desc {
         color: #fff;
+      }
+    }
+  }
+
+  .demo-preview {
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    padding: 5rem 2rem;
+
+    .demo-content {
+      text-align: center;
+      color: white;
+
+      .demo-desc {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .demo-video-placeholder {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 4rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.3);
+          transform: scale(1.02);
+        }
+
+        p {
+          margin-top: 1rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .testimonials-section {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+    text-align: center;
+
+    .testimonial-intro {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    .testimonial-carousel {
+      background: transparent;
+
+      .testimonial-card {
+        background: white;
+        border-radius: 20px;
+        padding: 3rem;
+        max-width: 800px;
+        margin: 0 auto;
+
+        .testimonial-text {
+          font-size: 1.3rem;
+          line-height: 1.6;
+          color: #333;
+          margin: 1.5rem 0;
+        }
+
+        .testimonial-author {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          margin-top: 2rem;
+
+          .author-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+
+          .author-title {
+            color: #666;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .community-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 5rem 2rem;
+
+    .community-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: white;
+
+      .community-intro {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+    }
+
+    .forum-card {
+      padding: 2rem;
+      text-align: center;
+      height: 100%;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        margin: 1rem 0;
+      }
+
+      p {
+        color: #666;
+        margin-bottom: 1.5rem;
+      }
+
+      .resource-stats {
+        display: flex;
+        justify-content: space-around;
+        margin: 1.5rem 0;
+
+        .resource-stat {
+          text-align: center;
+
+          .resource-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4A90E2;
+          }
+        }
+      }
+
+      .forum-btn {
+        margin-top: 1rem;
       }
     }
   }
@@ -200,28 +399,17 @@
       padding: 2rem;
       text-align: center;
       transition: all 0.3s ease;
+      height: 100%;
 
       &:hover {
         box-shadow: 0 8px 24px rgba($primary-color, 0.2);
         transform: translateY(-5px);
       }
 
-      .benefit-icon {
-        background: $primary-color;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 1rem;
-        color: #fff;
-      }
-
       .benefit-title {
         font-weight: 600;
         font-size: 1.2rem;
-        margin-bottom: 0.5rem;
+        margin: 1rem 0;
       }
 
       .benefit-desc {
@@ -234,9 +422,83 @@
       color: #666;
       font-size: 1.3rem;
       text-align: center;
-      margin-top: -1rem;
       max-width: 700px;
       margin-bottom: 25px;
+    }
+  }
+
+  .integration-section {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: white;
+
+    .integration-intro {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    .integration-logos {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+
+      .integration-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        span {
+          font-size: 0.9rem;
+          color: #666;
+        }
+      }
+    }
+  }
+
+  .pricing-preview {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+    text-align: center;
+
+    .pricing-btn {
+      background-color: $primary-color !important;
+      color: white;
+      margin-top: 1rem;
+    }
+  }
+
+  .blog-section {
+    padding: 5rem 2rem;
+    background: white;
+    text-align: center;
+
+    .blog-intro {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    .blog-card {
+      text-align: left;
+      height: 100%;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+
+      p {
+        color: #666;
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -251,10 +513,27 @@
       font-weight: 600;
       margin-bottom: 1rem;
     }
+
     .cta-desc {
       opacity: 0.9;
       font-size: 1.1rem;
       margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-note {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-top: 1.5rem;
     }
 
     .btn-register {
@@ -265,8 +544,17 @@
       font-size: 1rem;
 
       &:hover {
-        background-color: $primary-color;
-        color: #FFF;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #000;
+      }
+    }
+
+    .btn-demo {
+      border-color: white;
+      color: white;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
       }
     }
   }
