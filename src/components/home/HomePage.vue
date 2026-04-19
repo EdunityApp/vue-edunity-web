@@ -11,9 +11,6 @@
             measurable education from anywhere in the world.
           </p>
           <div class="hero-buttons">
-            <v-btn to="/play" color="primary" size="large" class="home-page__btn--primary">
-              Start a new class
-            </v-btn>
             <v-btn to="/register" variant="outlined" size="large" class="home-page__btn--outline">
               Explore our features
             </v-btn>
