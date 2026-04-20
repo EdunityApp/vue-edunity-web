@@ -30,6 +30,7 @@ declare module 'vue-router/auto-routes' {
     '/pricing': RouteRecordInfo<'/pricing', '/pricing', Record<never, never>, Record<never, never>>,
     '/privacy': RouteRecordInfo<'/privacy', '/privacy', Record<never, never>, Record<never, never>>,
     '/register': RouteRecordInfo<'/register', '/register', Record<never, never>, Record<never, never>>,
+    '/teams': RouteRecordInfo<'/teams', '/teams', Record<never, never>, Record<never, never>>,
     '/terms': RouteRecordInfo<'/terms', '/terms', Record<never, never>, Record<never, never>>,
   }
 
@@ -90,6 +91,10 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/register.vue': {
       routes: '/register'
+      views: never
+    }
+    'src/pages/teams.vue': {
+      routes: '/teams'
       views: never
     }
     'src/pages/terms.vue': {

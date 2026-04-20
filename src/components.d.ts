@@ -30,6 +30,7 @@ declare module 'vue' {
     RegisterPage: typeof import('./components/register/RegisterPage.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TeamPage: typeof import('./components/teams/TeamPage.vue')['default']
     TermsOfServicePage: typeof import('./components/terms/TermsOfServicePage.vue')['default']
   }
 }

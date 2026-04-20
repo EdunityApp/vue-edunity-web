@@ -1,0 +1,235 @@
+@use "@styles/common.scss" as *;
+
+.team-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff 0%, #d2f1ff 50%, #fdd4ff 100%);
+
+  .team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+  }
+
+  .team-header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .team-title {
+      font-size: 64px;
+      font-weight: 700;
+      background: linear-gradient(135deg, $primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .team-subtitle {
+      font-size: 1.25rem;
+      color: #64748b;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+  }
+
+  .team-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+
+    .filter-btn {
+      text-transform: none;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .team-card {
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: white;
+    animation: fadeInUp 0.6s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .team-image-container {
+      margin-bottom: 1rem;
+
+      .team-image-placeholder {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+        background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(80, 227, 194, 0.1));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: #1a202c;
+    }
+
+    .team-role {
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-department {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: #f1f5f9;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      color: #475569;
+      margin-bottom: 1rem;
+
+      .dept-icon {
+        color: $primary-color;
+      }
+    }
+
+    .team-bio {
+      color: #64748b;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .team-social {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+
+      .social-icon {
+        cursor: pointer;
+        color: #94a3b8;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+
+  .team-join {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(80, 227, 194, 0.1));
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, $primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .join-btn {
+      background: linear-gradient(135deg, $primary-color, $secondary-color);
+      color: white;
+      text-transform: none;
+      font-weight: 600;
+      padding: 0 2rem;
+      border-radius: 50px;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-page {
+    .team-container {
+      padding: 6rem 1.5rem;
+    }
+
+    .team-header {
+      .team-title {
+        font-size: 48px;
+      }
+
+      .team-subtitle {
+        font-size: 1.1rem;
+      }
+    }
+
+    .team-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .team-join {
+      padding: 2rem 1.5rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -51,12 +51,37 @@ const goHome = () => {
         <v-img :src="logo" alt="Edunity Logo" width="42" height="42" />
       </v-btn>
 
-      <v-btn-stack class="nav-links d-none d-md-flex">
+      <div class="nav-links d-none d-md-flex">
         <v-btn to="/" variant="text">Home</v-btn>
-        <v-btn to="/about" variant="text">About</v-btn>
-        <v-btn to="/community" variant="text">Community</v-btn>
+
+        <v-menu>
+          <template #activator="{ props: menuProps }">
+            <v-btn v-bind="menuProps" variant="text">
+              About
+              <v-icon end>mdi-chevron-down</v-icon>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item to="/about" title="About Us" />
+            <v-list-item to="/teams" title="Our Team" />
+          </v-list>
+        </v-menu>
+
+        <v-menu>
+          <template #activator="{ props: menuProps }">
+            <v-btn v-bind="menuProps" variant="text">
+              Community
+              <v-icon end>mdi-chevron-down</v-icon>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item to="/blogs" title="Blogs" />
+            <v-list-item to="/forums" title="Forums" />
+          </v-list>
+        </v-menu>
+
         <v-btn to="/pricing" variant="text">Pricing</v-btn>
-      </v-btn-stack>
+      </div>
     </div>
 
     <v-spacer />
@@ -103,8 +128,10 @@ const goHome = () => {
   <v-navigation-drawer v-model="drawer" location="left" temporary>
     <v-list nav>
       <v-list-item to="/" title="Home" />
-      <v-list-item to="/about" title="About" />
-      <v-list-item to="/community" title="Community" />
+      <v-list-item to="/about" title="About Us" />
+      <v-list-item to="/teams" title="Our Team" />
+      <v-list-item to="/blogs" title="Blogs" />
+      <v-list-item to="/forums" title="Forums" />
       <v-list-item to="/pricing" title="Pricing" />
       <v-divider class="my-2" />
       <v-list-item v-if="!isLoggedIn" to="/login" title="Login" />
@@ -120,7 +147,7 @@ const goHome = () => {
 <style scoped lang="scss">
 .home-header {
   padding: 0 1rem !important;
-  
+
   .header-left,
   .header-right {
     box-sizing: border-box;
@@ -134,6 +161,8 @@ const goHome = () => {
   }
 
   .nav-links {
+    display: flex;
+    align-items: center;
     gap: 0.5rem;
   }
 
