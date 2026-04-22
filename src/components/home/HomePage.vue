@@ -175,10 +175,9 @@
                 <p>Engage in meaningful discussions with fellow educators, share best practices, and get expert advice
                 </p>
                 <v-chip-group>
-                  <v-chip>Lesson Planning</v-chip>
-                  <v-chip>EdTech Tools</v-chip>
-                  <v-chip>Student Engagement</v-chip>
-                  <v-chip>Assessment Strategies</v-chip>
+                  <v-chip v-for="(chip, index) in chips" :key="index">
+                    {{ chip }}
+                  </v-chip>
                 </v-chip-group>
                 <v-btn variant="outlined" color="#4A90E2" class="forum-btn">Join the conversation</v-btn>
               </v-card>
@@ -269,6 +268,7 @@
 import { onMounted } from "vue";
 import HomeTemplate from "@/templates/HomeTemplate.vue";
 import { setBrowserTitle } from "@/utils/web_util";
+import { chips } from "./home.variables";
 
 const features = [
   {
@@ -389,19 +389,19 @@ const testimonials = [
     text: "Edunity has completely transformed how we teach. Our student engagement has increased by 40% since implementing the platform.",
     name: "Nguyen Thi Lan",
     title: "Principal, Hanoi International School",
-    avatar: "/assets/avatars/teacher1.jpg"
+    avatar: "https://ui-avatars.com/api/?name=John+Doe"
   },
   {
     text: "The analytics feature alone is worth it. We can now identify struggling students in real-time and provide immediate support.",
     name: "Tran Van Minh",
     title: "Head of IT, Saigon Academy",
-    avatar: "/assets/avatars/teacher2.jpg"
+    avatar: "https://ui-avatars.com/api/?name=John+Doe"
   },
   {
     text: "Our teachers love the intuitive interface and students enjoy the gamified learning experience. It's a win-win!",
     name: "Le Thi Huong",
     title: "Curriculum Director, Da Nang Education Center",
-    avatar: "/assets/avatars/teacher3.jpg"
+    avatar: "https://ui-avatars.com/api/?name=John+Doe"
   }
 ];
 
