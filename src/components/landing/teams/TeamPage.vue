@@ -67,7 +67,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import HomeTemplate from "../../templates/HomeTemplate";
+import HomeTemplate from "@/templates/HomeTemplate.vue";
 
 const selectedFilter = ref("All");
 

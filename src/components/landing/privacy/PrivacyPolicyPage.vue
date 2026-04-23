@@ -2,13 +2,11 @@
   <home-template>
     <div class="privacy-page">
       <div class="privacy-container">
-        <!-- Header -->
         <div class="privacy-header text-center my-8">
           <h1 class="privacy-title display-1 font-weight-bold mb-4">Privacy Policy</h1>
           <p class="privacy-subtitle headline">Effective Date: November 10, 2025</p>
         </div>
 
-        <!-- Table of Contents -->
         <div class="privacy-toc my-10">
           <h2 class="toc-title title mb-4">Table of Contents</h2>
           <v-list dense>
@@ -26,9 +24,7 @@
           </v-list>
         </div>
 
-        <!-- Main Content -->
         <v-container class="privacy-box">
-          <!-- Introduction -->
           <div class="privacy-intro mb-10">
             <p class="body-1">
               At Edunity, your privacy is our priority. We believe that learning should be both empowering and secure. This Privacy Policy describes how we handle your data responsibly to maintain trust, transparency, and safety throughout your experience.
@@ -38,7 +34,6 @@
             </p>
           </div>
 
-          <!-- Sections -->
           <div
             v-for="section in sections"
             :key="section.id"
@@ -51,7 +46,6 @@
             </div>
           </div>
 
-          <!-- Footer -->
           <div class="privacy-footer mt-12 pt-8 border-t">
             <p class="body-1">
               By continuing to use Edunity, you confirm that you have read and understood this Privacy Policy and agree to the collection and use of information in accordance with it.
@@ -65,7 +59,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import HomeTemplate from '@/templates/HomeTemplate.vue' // Adjust path as needed
+import HomeTemplate from '@/templates/HomeTemplate.vue'
 import { setBrowserTitle } from '@/utils/web_util'
 
 const sections = [
@@ -75,7 +69,7 @@ const sections = [
   { id: 'cookies', title: '4. Cookies and Tracking Technologies' },
   { id: 'third-parties', title: '5. Third-Party Services' },
   { id: 'data-protection', title: '6. Data Security and Protection' },
-  { id: 'children', title: '7. Children’s Privacy' },
+  { id: 'children', title: '7. Children\'s Privacy' },
   { id: 'rights', title: '8. Your Rights and Choices' },
   { id: 'data-retention', title: '9. Data Retention' },
   { id: 'updates', title: '10. Updates to This Policy' },

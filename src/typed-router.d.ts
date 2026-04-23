@@ -19,23 +19,23 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
-    '/about': RouteRecordInfo<'/about', '/about', Record<never, never>, Record<never, never>>,
+    '/about/': RouteRecordInfo<'/about/', '/about', Record<never, never>, Record<never, never>>,
     '/app': RouteRecordInfo<'/app', '/app', Record<never, never>, Record<never, never>>,
     '/blogs/': RouteRecordInfo<'/blogs/', '/blogs', Record<never, never>, Record<never, never>>,
     '/blogs/article/[id]': RouteRecordInfo<'/blogs/article/[id]', '/blogs/article/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
-    '/branding': RouteRecordInfo<'/branding', '/branding', Record<never, never>, Record<never, never>>,
-    '/contact': RouteRecordInfo<'/contact', '/contact', Record<never, never>, Record<never, never>>,
+    '/branding/': RouteRecordInfo<'/branding/', '/branding', Record<never, never>, Record<never, never>>,
+    '/contact/': RouteRecordInfo<'/contact/', '/contact', Record<never, never>, Record<never, never>>,
     '/forums/': RouteRecordInfo<'/forums/', '/forums', Record<never, never>, Record<never, never>>,
     '/forums/category/[id]': RouteRecordInfo<'/forums/category/[id]', '/forums/category/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
     '/forums/thread/[id]': RouteRecordInfo<'/forums/thread/[id]', '/forums/thread/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
-    '/home': RouteRecordInfo<'/home', '/home', Record<never, never>, Record<never, never>>,
-    '/login': RouteRecordInfo<'/login', '/login', Record<never, never>, Record<never, never>>,
-    '/missions': RouteRecordInfo<'/missions', '/missions', Record<never, never>, Record<never, never>>,
-    '/pricing': RouteRecordInfo<'/pricing', '/pricing', Record<never, never>, Record<never, never>>,
-    '/privacy': RouteRecordInfo<'/privacy', '/privacy', Record<never, never>, Record<never, never>>,
-    '/register': RouteRecordInfo<'/register', '/register', Record<never, never>, Record<never, never>>,
-    '/teams': RouteRecordInfo<'/teams', '/teams', Record<never, never>, Record<never, never>>,
-    '/terms': RouteRecordInfo<'/terms', '/terms', Record<never, never>, Record<never, never>>,
+    '/home/': RouteRecordInfo<'/home/', '/home', Record<never, never>, Record<never, never>>,
+    '/login/': RouteRecordInfo<'/login/', '/login', Record<never, never>, Record<never, never>>,
+    '/missions/': RouteRecordInfo<'/missions/', '/missions', Record<never, never>, Record<never, never>>,
+    '/pricing/': RouteRecordInfo<'/pricing/', '/pricing', Record<never, never>, Record<never, never>>,
+    '/privacy/': RouteRecordInfo<'/privacy/', '/privacy', Record<never, never>, Record<never, never>>,
+    '/register/': RouteRecordInfo<'/register/', '/register', Record<never, never>, Record<never, never>>,
+    '/teams/': RouteRecordInfo<'/teams/', '/teams', Record<never, never>, Record<never, never>>,
+    '/terms/': RouteRecordInfo<'/terms/', '/terms', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -53,8 +53,8 @@ declare module 'vue-router/auto-routes' {
       routes: '/'
       views: never
     }
-    'src/pages/about.vue': {
-      routes: '/about'
+    'src/pages/about/index.vue': {
+      routes: '/about/'
       views: never
     }
     'src/pages/app.vue': {
@@ -69,12 +69,12 @@ declare module 'vue-router/auto-routes' {
       routes: '/blogs/article/[id]'
       views: never
     }
-    'src/pages/branding.vue': {
-      routes: '/branding'
+    'src/pages/branding/index.vue': {
+      routes: '/branding/'
       views: never
     }
-    'src/pages/contact.vue': {
-      routes: '/contact'
+    'src/pages/contact/index.vue': {
+      routes: '/contact/'
       views: never
     }
     'src/pages/forums/index.vue': {
@@ -89,36 +89,36 @@ declare module 'vue-router/auto-routes' {
       routes: '/forums/thread/[id]'
       views: never
     }
-    'src/pages/home.vue': {
-      routes: '/home'
+    'src/pages/home/index.vue': {
+      routes: '/home/'
       views: never
     }
-    'src/pages/login.vue': {
-      routes: '/login'
+    'src/pages/login/index.vue': {
+      routes: '/login/'
       views: never
     }
-    'src/pages/missions.vue': {
-      routes: '/missions'
+    'src/pages/missions/index.vue': {
+      routes: '/missions/'
       views: never
     }
-    'src/pages/pricing.vue': {
-      routes: '/pricing'
+    'src/pages/pricing/index.vue': {
+      routes: '/pricing/'
       views: never
     }
-    'src/pages/privacy.vue': {
-      routes: '/privacy'
+    'src/pages/privacy/index.vue': {
+      routes: '/privacy/'
       views: never
     }
-    'src/pages/register.vue': {
-      routes: '/register'
+    'src/pages/register/index.vue': {
+      routes: '/register/'
       views: never
     }
-    'src/pages/teams.vue': {
-      routes: '/teams'
+    'src/pages/teams/index.vue': {
+      routes: '/teams/'
       views: never
     }
-    'src/pages/terms.vue': {
-      routes: '/terms'
+    'src/pages/terms/index.vue': {
+      routes: '/terms/'
       views: never
     }
   }

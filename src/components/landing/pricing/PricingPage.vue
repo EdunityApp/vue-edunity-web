@@ -180,8 +180,8 @@
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
-import HomeTemplate from "../../templates/HomeTemplate";
-import { setBrowserTitle } from "../../utils/web_util";
+import HomeTemplate from "@/templates/HomeTemplate.vue";
+import { setBrowserTitle } from "@/utils/web_util";
 
 const isAnnual = ref(true);
 const activeCategory = ref("Personal");

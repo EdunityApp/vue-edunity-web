@@ -13,9 +13,9 @@
           <div class="story-text">
             <h2>Our story</h2>
             <p>
-              Edunity began in late 2025 with a dream to make learning
-              exciting, engaging, and community-powered. Our team is formed with the beliefs that
-              education should never feel like a chore; it should spark curiosity and intelliectual connections.
+              The idea for Edunity started in late 2025 with the initial goal of making learning fun, interesting,
+              driven by the community in unison. Our team is formed with the beliefs that education should never feel
+              like a chore; it should spark curiosity and intellectual connections.
             </p>
             <p>
               From the beginnings to what we have today, our mission
@@ -42,16 +42,14 @@
               <div class="mission-card">
                 <v-icon size="48" color="#4A90E2">mdi-target</v-icon>
                 <h3>Our mission</h3>
-                <p>To democratize education by making engaging, personalized learning accessible to every student,
-                  teacher, and institution worldwide.</p>
+                <p> to make engaging, personalized learning available to every student, teacher, and school in the world.</p>
               </div>
             </v-col>
             <v-col cols="12" md="6">
               <div class="vision-card">
                 <v-icon size="48" color="#50E3C2">mdi-eye</v-icon>
                 <h3>Our Vision</h3>
-                <p>A world where technology and human connection unite to create transformative learning experiences
-                  that inspire lifelong curiosity.</p>
+                <p>A world where technology and human connection come together to create learning experiences that change lives and spark lifelong curiosity.</p>
               </div>
             </v-col>
           </v-row>
@@ -128,7 +126,7 @@
 </template>
 
 <script setup>
-import HomeTemplate from "../../templates/HomeTemplate";
+import HomeTemplate from '@/templates/HomeTemplate.vue';
 
 const coreValues = [
   {

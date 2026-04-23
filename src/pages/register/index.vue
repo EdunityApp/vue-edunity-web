@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import RegisterPage from '@/components/register/RegisterPage.vue';
+import RegisterPage from '@/components/auth/register/RegisterPage.vue';
 
 export default {
   name: "login",

@@ -13,11 +13,11 @@
 
 .brand-header {
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 
   .brand-title {
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(to right, $primary-color, $secondary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -25,126 +25,387 @@
   }
 
   .brand-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #64748b;
     max-width: 700px;
     margin: 0 auto;
+    line-height: 1.6;
   }
 }
 
-.brand-logos {
-  margin-bottom: 8rem;
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  margin-bottom: 2rem;
   text-align: center;
+}
 
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    background: linear-gradient(to right, $primary-color, $secondary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 3rem;
-  }
+.brand-logos {
+  margin-bottom: 4rem;
 
   .logo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
   }
 
   .logo-card {
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     text-align: center;
+    border-radius: 1rem;
 
     &:hover {
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo-wrapper {
+      background: #f8fafc;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      margin-bottom: 1rem;
     }
 
     .logo-image {
-      width: 100%;
-      border-radius: 1rem;
-      margin-bottom: 1.25rem;
+      height: 80px;
+      margin: 0 auto;
     }
 
     h3 {
       font-size: 1.25rem;
       font-weight: 600;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
+      color: #1e293b;
     }
 
     p {
       color: #64748b;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+    }
+
+    .format-chip {
+      background: linear-gradient(135deg, $primary-color, $secondary-color);
+      color: white;
+    }
+  }
+}
+
+.logo-usage-rules {
+  margin-bottom: 4rem;
+
+  .rules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .rule-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+
+    &:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0.75rem 0 0.5rem;
+      color: #1e293b;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 0.85rem;
+      line-height: 1.5;
     }
   }
 }
 
 .brand-colors {
-  margin-bottom: 8rem;
-  text-align: center;
-
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    background: linear-gradient(to right, $primary-color, $secondary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 3rem;
-  }
+  margin-bottom: 4rem;
 
   .color-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
   }
 
   .color-card {
-    background: #fff;
+    background: white;
     padding: 1.5rem;
     border-radius: 1rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
 
     .color-sample {
       width: 100%;
-      height: 120px;
+      height: 100px;
       border-radius: 0.75rem;
       margin-bottom: 1rem;
     }
 
     h4 {
-      font-size: 1.125rem;
+      font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 0.25rem;
+      color: #1e293b;
     }
 
     p {
       color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    .color-usage {
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+      color: #94a3b8;
+    }
+  }
+}
+
+.brand-icons {
+  margin-bottom: 4rem;
+
+  .icon-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .icon-recommendation,
+  .icon-guidelines {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #e2e8f0;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #1e293b;
+    }
+
+    p {
+      color: #64748b;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .icon-preview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .icon-item {
+      text-align: center;
+      padding: 0.5rem;
+
+      span {
+        display: block;
+        font-size: 0.75rem;
+        color: #64748b;
+        margin-top: 0.25rem;
+      }
+    }
+  }
+
+  .icon-guidelines ul {
+    padding-left: 1.25rem;
+
+    li {
+      color: #475569;
+      line-height: 1.8;
+    }
+  }
+}
+
+.brand-accessibility {
+  margin-bottom: 4rem;
+
+  .accessibility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .accessibility-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0.75rem 0 0.5rem;
+      color: #1e293b;
+    }
+
+    p {
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      color: #94a3b8;
+    }
+  }
+}
+
+.brand-identity {
+  margin-bottom: 4rem;
+
+  .identity-container {
+    display: block;
+  }
+
+  .identity-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #64748b;
+    }
+
+    .official-name {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, $primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      color: #64748b;
+      font-style: italic;
+    }
+
+    ol {
+      text-align: left;
+      padding-left: 1.5rem;
+
+      li {
+        color: #475569;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  .name-variations {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
+.brand-prohibited {
+  margin-bottom: 4rem;
+
+  .prohibited-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .prohibited-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0.75rem 0 0.5rem;
+      color: #1e293b;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .bad-examples {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+
+      span {
+        font-size: 0.85rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+
+        &.bad {
+          background: #fee2e2;
+          color: #dc2626;
+        }
+
+        &.good {
+          background: #dcfce7;
+          color: #10b981;
+        }
+      }
     }
   }
 }
 
 .brand-guidelines {
-  max-width: 900px;
-  margin: 0 auto 4rem;
-
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    background: linear-gradient(to right, $primary-color, $secondary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
+  margin-bottom: 4rem;
 
   .legal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 1rem;
+      color: #1e293b;
     }
 
     ul {
-      margin-bottom: 2rem;
+      padding-left: 1.25rem;
 
       li {
         color: #475569;
@@ -152,5 +413,72 @@
         margin-bottom: 0.5rem;
       }
     }
+
+    .allowed-section h3 {
+      color: #10b981;
+    }
+
+    .not-allowed-section h3 {
+      color: #dc2626;
+    }
+  }
+}
+
+.brand-contact {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(to bottom, $primary-color, $tertiary-color);
+
+  .section-title {
+    color: #ffffff !important;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+
+    .v-btn {
+      text-transform: none;
+      font-weight: 500;
+    }
+
+    .btn-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      * {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-container {
+    padding: 6rem 1.5rem;
+  }
+
+  .brand-header {
+    .brand-title {
+      font-size: 48px;
+    }
+
+    .brand-subtitle {
+      font-size: 1.1rem;
+    }
+  }
+
+  .section-title {
+    font-size: 1.75rem;
   }
 }
