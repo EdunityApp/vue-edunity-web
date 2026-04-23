@@ -5,8 +5,7 @@
         <div class="about-header">
           <h1 class="about-title">About Edunity</h1>
           <p class="about-subtitle">
-            We're crafting the next generation of interactive, AI-driven
-            learning experiences.
+            Learn more about us!
           </p>
         </div>
 
@@ -15,20 +14,19 @@
             <h2>Our story</h2>
             <p>
               Edunity began in late 2025 with a dream to make learning
-              exciting, engaging, and community-powered. We believe that
-              education shouldn't feel like a chore—it should spark curiosity
-              and connection.
+              exciting, engaging, and community-powered. Our team is formed with the beliefs that
+              education should never feel like a chore; it should spark curiosity and intelliectual connections.
             </p>
             <p>
-              From our humble beginnings to our first beta launch, our mission
-              has remained the same: transform how people learn, teach, and
+              From the beginnings to what we have today, our mission
+              has remained the same: to transform how people learn, teach, and
               test knowledge through creativity and collaboration.
             </p>
             <p>
-              With an AI-driven core and a passionate community, we're
-              building a world where quizzes inspire discovery and every
-              learner finds joy in progress.
+              We strive to cultivate an environment where both learning and teaching inspire exploration, and to
+              experiences a genuine sense of achievement and growth throughout the educational journey.
             </p>
+            <p>Together we learn, and together we progress.</p>
           </div>
 
           <div class="story-image">
@@ -43,7 +41,7 @@
             <v-col cols="12" md="6">
               <div class="mission-card">
                 <v-icon size="48" color="#4A90E2">mdi-target</v-icon>
-                <h3>Our Mission</h3>
+                <h3>Our mission</h3>
                 <p>To democratize education by making engaging, personalized learning accessible to every student,
                   teacher, and institution worldwide.</p>
               </div>
@@ -93,7 +91,7 @@
         </div>
 
         <div class="about-stats">
-          <h2 class="stats-title">Up until this point, our team has provided for</h2>
+          <h2 class="stats-title">Thanks to our connection, we have cummulated</h2>
 
           <v-row class="stats-grid">
             <v-col v-for="(stat, index) in companyStats" :key="index" cols="6" md="3">
@@ -108,9 +106,11 @@
         <div class="about-future">
           <h2 class="future-title">But it's only the start</h2>
           <p>
-            It's not over for us. This journey has just begun. We are committed to redefining further how education
+            It's not over for us. This journey has only just begun. We are committed to redefining further how education
             works
-            around the world, alongside the best way to make learning more interesting and engaging for students around the world, one step at a time!
+            around the world, alongside the best way to make learning more interesting and engaging for students around
+            the
+            world, one step at a time!
           </p>
           <p>So what are we waiting for?</p>
           <div class="future-cta">

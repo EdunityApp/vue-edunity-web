@@ -18,6 +18,7 @@ declare module 'vue' {
     BrandingPage: typeof import('./components/branding/BrandingPage.vue')['default']
     ContactPage: typeof import('./components/contact/ContactPage.vue')['default']
     CustomBreadcrumb: typeof import('./components/commons/CustomBreadcrumb.vue')['default']
+    ForumsHome: typeof import('./components/landing/forums/ForumsHome.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     HomeFooter: typeof import('./components/home/HomeFooter.vue')['default']
     HomeHeader: typeof import('./components/home/HomeHeader.vue')['default']

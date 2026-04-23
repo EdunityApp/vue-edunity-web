@@ -20,10 +20,12 @@ declare module 'vue-router/auto-routes' {
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/about': RouteRecordInfo<'/about', '/about', Record<never, never>, Record<never, never>>,
+    '/app': RouteRecordInfo<'/app', '/app', Record<never, never>, Record<never, never>>,
     '/blogs/': RouteRecordInfo<'/blogs/', '/blogs', Record<never, never>, Record<never, never>>,
     '/blogs/article/[id]': RouteRecordInfo<'/blogs/article/[id]', '/blogs/article/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
     '/branding': RouteRecordInfo<'/branding', '/branding', Record<never, never>, Record<never, never>>,
     '/contact': RouteRecordInfo<'/contact', '/contact', Record<never, never>, Record<never, never>>,
+    '/forums/': RouteRecordInfo<'/forums/', '/forums', Record<never, never>, Record<never, never>>,
     '/home': RouteRecordInfo<'/home', '/home', Record<never, never>, Record<never, never>>,
     '/login': RouteRecordInfo<'/login', '/login', Record<never, never>, Record<never, never>>,
     '/missions': RouteRecordInfo<'/missions', '/missions', Record<never, never>, Record<never, never>>,
@@ -53,6 +55,10 @@ declare module 'vue-router/auto-routes' {
       routes: '/about'
       views: never
     }
+    'src/pages/app.vue': {
+      routes: '/app'
+      views: never
+    }
     'src/pages/blogs/index.vue': {
       routes: '/blogs/'
       views: never
@@ -67,6 +73,10 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/contact.vue': {
       routes: '/contact'
+      views: never
+    }
+    'src/pages/forums/index.vue': {
+      routes: '/forums/'
       views: never
     }
     'src/pages/home.vue': {

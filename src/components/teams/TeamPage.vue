@@ -1,4 +1,3 @@
-<!-- TeamPage.vue -->
 <template>
   <HomeTemplate :isReactive="true">
     <div class="team-page">
@@ -53,14 +52,14 @@
           </v-card>
         </div>
 
-        <div class="team-join">
+        <!-- <div class="team-join">
           <h2>Join Our Team</h2>
           <p>We're always looking for talented individuals passionate about education technology</p>
           <v-btn to="/careers" color="#4A90E2" size="large" class="join-btn">
             View Open Positions
             <v-icon right>mdi-arrow-right</v-icon>
           </v-btn>
-        </div>
+        </div> -->
       </div>
     </div>
   </HomeTemplate>

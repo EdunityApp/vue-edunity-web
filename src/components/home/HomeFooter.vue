@@ -20,7 +20,7 @@ import logo from '@assets/logo.webp'
         <v-col cols="12" md="auto" class="footer-section">
           <h3 class="footer-title">Products</h3>
           <v-list density="compact" class="footer-links">
-            <v-list-item to="/community" title="Community" />
+            <v-list-item to="/about" title="About" />
             <v-list-item to="/pricing" title="Pricing" />
             <v-list-item to="/missions" title="Mission" />
           </v-list>
@@ -60,7 +60,7 @@ import logo from '@assets/logo.webp'
       <v-divider class="my-8" />
 
       <div class="footer-bottom text-center text-caption">
-        © 2025 Edunity. All rights reserved.
+        © 2026 Edunity. All rights reserved.
       </div>
     </v-container>
   </v-footer>
