@@ -5,7 +5,7 @@
         <div class="about-header">
           <h1 class="about-title">About Edunity</h1>
           <p class="about-subtitle">
-            Learn more about us!
+            Who we are as an organization
           </p>
         </div>
 
@@ -89,7 +89,7 @@
         </div>
 
         <div class="about-stats">
-          <h2 class="stats-title">Thanks to our connection, we have cummulated</h2>
+          <h2 class="stats-title">Thanks to our unification, we have achieved</h2>
 
           <v-row class="stats-grid">
             <v-col v-for="(stat, index) in companyStats" :key="index" cols="6" md="3">
